@@ -1,4 +1,4 @@
-# Car-Promotion
+# Subaru Crosstrek
 
 ## Description
 A single-page site to promote the Subaru Crosstrek and practice website styling & design.
