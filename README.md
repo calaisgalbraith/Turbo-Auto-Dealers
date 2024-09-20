@@ -17,6 +17,9 @@ View site [here](https://main--car-promotion.netlify.app/)
 * Phone numbers are clickable telephone links
 * Responsive sizing
 * Back to top button
+* Link to page for Hours
+* Link to page for Inventory
 
 ## Future Enhancements 
 * Update to use Bootstrap 5 (Used Bootstrap 3 as this was a requirement of the hiring company that requested this site demo)
+* Add demo data for Inventory (practice with back end)
