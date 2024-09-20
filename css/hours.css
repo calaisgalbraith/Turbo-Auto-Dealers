@@ -1,0 +1,49 @@
+.hoursContainer {
+    text-align: center;
+    height: 80vh;
+    font-size: 25px;
+}
+
+.hours .navbar {
+    height: 10vh;
+    margin-bottom: 0px !important;
+}
+
+.hours .footer {
+    height: 10vh;
+}
+
+.hoursContainer div {
+    margin: auto;
+}
+
+.hoursContainer {
+    display: flex
+}
+
+.hours .panel-title {
+    font-size: 25px !important;
+}
+
+@media only screen and (max-width: 770px) {
+    .hours .footer {
+        height: 15vh;
+    }
+
+    .inventory .navbar {
+        height: 5vh;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1000px){
+    .hours .footer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 990px){
+    .hours .panel {
+        width: 66%;
+    }
+}
+
