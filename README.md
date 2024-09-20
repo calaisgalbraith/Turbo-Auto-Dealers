@@ -11,6 +11,7 @@ View site [here](https://main--car-promotion.netlify.app/)
 * HTML
 * CSS
 * Bootstrap
+* Javascript
 
 ## Core Features
 * Image carousel of promotional images
