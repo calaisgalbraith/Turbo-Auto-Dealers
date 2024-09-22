@@ -1,39 +1,12 @@
+/* Inventory Container */
 .inventoryContainer {
     text-align: center;
     height: 80vh;
     font-size: 25px;
-}
-
-.inventory .navbar {
-    height: 10vh;
-    margin-bottom: 0px !important;
-}
-
-.inventory .footer {
-    height: 10vh;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .inventoryContainer div {
     margin: auto;
-}
-
-.inventoryContainer {
-    display: flex
-}
-
-@media only screen and (max-width: 770px) {
-    .inventory .footer {
-        height: 15vh;
-    }
-
-    .inventory .navbar {
-        height: 5vh;
-    }
-}
-
-
-@media only screen and (min-width: 770px) and (max-width: 1000px){
-    .inventory .footer {
-        font-size: 15px;
-    }
 }

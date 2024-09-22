@@ -10,7 +10,5 @@ $(window).scroll(function() {
 });
 
 $('#backToTopBtn').click(() => {
-    $('html, body').animate({
-        scrollTop: 0
-    }, 'slow');
+    window.scrollTo(0, 0);
 })

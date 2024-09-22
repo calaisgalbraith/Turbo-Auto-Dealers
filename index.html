@@ -1,198 +1,204 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Subaru Crosstrek</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Subaru Crosstrek</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <button id="backToTopBtn" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
-    <div class="container statsContainer">
+    <body>
 
-        <div class="row titleHeader">
-            <div class="col-md-12">
-                2024 Subaru Crosstrek in Charlotte, NC
-            </div>
-        </div>
-
-        <div class="row topRow">
-            <div class="col-md-12">
-                <div id="imageCarousel" class="carousel slide" data-ride="false" data-pause="true">
-                    <ol class="carousel-indicators">
-                      <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#imageCarousel" data-slide-to="1"></li>
-                      <li data-target="#imageCarousel" data-slide-to="2"></li>
-                      <li data-target="#imageCarousel" data-slide-to="3"></li>
-                      <li data-target="#imageCarousel" data-slide-to="4"></li>
-                      <li data-target="#imageCarousel" data-slide-to="5"></li>
-                      <li data-target="#imageCarousel" data-slide-to="6"></li>
-                      <li data-target="#imageCarousel" data-slide-to="7"></li>
-                    </ol>
-                
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="./images/crosstrek6.jpg" alt="Subaru Crosstrek in front of cliffside" style="width:100%;">
-                      </div>
-                
-                      <div class="item">
-                        <img src="./images/crosstrek11.jpg" alt="Subaru Crosstrek trunk being loaded" style="width:100%;">
-                      </div>
-                    
-                      <div class="item">
-                        <img src="./images/crosstrek7.jpg" alt="Interior of Subaru Crosstrek trunk" style="width:100%;">
-                      </div>
-
-                      <div class="item">
-                        <img src="./images/crosstrek4.jpg" alt="Subaru Crosstrek dashboard" style="width:100%;">
-                      </div>
-
-                      <div class="item">
-                        <img src="./images/crosstrek2.png" alt="Black Subaru Crosstrek" style="width:100%;">
-                      </div>
-
-                      <div class="item">
-                        <img src="./images/crosstrek.png" alt="Yellow Subaru Crosstrek" style="width:100%;">
-                      </div>
-
-                      <div class="item">
-                        <img src="./images/crosstrek3.jpg" alt="Bike rack on top of Subaru Crosstrek"  style="width:100%;">
-                      </div>
-
-                      <div class="item">
-                        <img src="./images/crosstrek9.jpg" alt="Subaru Crosstrek trunk open in front of campsite" style="width:100%;">
-                      </div>
-                    </div>
-                
-                    <a class="left carousel-control" href="#imageCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#imageCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
+      <button id="backToTopBtn" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+      <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Subaru Dealer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOptions">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./inventory.html">Inventory</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./hours.html">Hours</a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </div>
-        
-        <div class="row statsRow">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div>
-                    <span class="toBold">4.39</span> (74 Reviews)
-                </div>
-                <div class="smallerFont">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star half"></span>
-                </div>
-            </div>
+              </div>
+            </nav>
+        </header>
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="toBold">MSRP </div>
-                <div class="smallerFont">$28,245</div>
-            </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="toBold">MPG </div>
-                <div class="smallerFont">35/29 (Hwy/City)</div>
+        <div id="imageCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/crosstrek6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek11.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/crosstrek9.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <div class="row statsRow">
-            <div class="col-md-12">
-                <a href="./inventory.html">
-                    <button type='submit'>Search Inventory</button>
-                </a>
+          <div class="col">
+            <div>
+              <span class="toBold">4.45</span> (74 Reviews)
             </div>
+            <div class="smallerFont">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="toBold">MSRP </div>
+            <div class="smallerFont">$28,245</div>
+          </div>
+
+          <div class="col">
+              <div class="toBold">MPG </div>
+              <div class="smallerFont">35/29 (Hwy/City)</div>
+          </div>
         </div>
 
-        <div class="row rowReverse">
-            <div class="col-md-7 ">
-                <img src="./images/crosstrek1.jpg" alt="Subaru Crosstrek on canyon cliffside" style="width:100%;">
-            </div>
-
-            <div class="col-md-5">
-                <div>
-                    <h2 class="imageTextHeader">Always room for stories.</h2>
-                    <p class="imageTextBody">The 2024 Subaru Crosstrek is the most powerful, most fun to drive, and safest Crosstrek we’ve ever made, with performance, technology, and design updates throughout.</p>
-                </div>
-            </div>
+        <div class="row statsRow">
+          <div class="col">
+              <a href="./inventory.html">
+                  <button>Search Inventory</button>
+              </a>
+          </div>
         </div>
 
         <div class="row">
-            <div class="col-md-7 ">
-                <img src="./images/crosstrek2.jpg" alt="Subaru Crosstrek driving on road with kayaks on top of it " style="width:100%;">
-            </div>
-            <div class="col-md-5">
-                <div>
-                    <h2 class="imageTextHeader">Extra Power, Capability, and Fun</h2>
-                    <p class="imageTextBody">The 2024 Crosstrek features a newly available 2.5-liter direct-injection SUBARU BOXER engine that delivers more torque and increases output to 182 horsepower – extra power that makes all your trips more exciting and responsive.</p>
-                </div>
-            </div>
+          <div class="col-md-7 order-md-2">
+              <img src="./images/crosstrek1.jpg" alt="Subaru Crosstrek on canyon cliffside" class="w-100">
+          </div>
+
+          <div class="col-md-5 order-md-1">
+              <div>
+                  <h2 class="imageTextHeader">Always room for stories.</h2>
+                  <p class="imageTextBody">The 2024 Subaru Crosstrek is the most powerful, most fun to drive, and safest Crosstrek we’ve ever made, with performance, technology, and design updates throughout.</p>
+              </div>
+          </div>
         </div>
-
-        <div class="row rowReverse">
-            <div class="col-md-7">
-                <img src="./images/crosstrek10.jpg" alt="Front grill of Subaru Crosstrek" style="width:100%;">
-            </div>
-
-            <div class="col-md-5">
-                <div>
-                    <h2 class="imageTextHeader">Sporty Exterior Design</h2>
-                    <p class="imageTextBody">Crosstrek Sport features unique exterior design elements like its aggressively styled grille and wheel arch moldings, gunmetal finish exterior accents, and exclusive dark gray wheels.</p>
-                </div>
-            </div>
-         </div>
 
         <div class="row">
-            <div class="col-md-7">
-                <img src="./images/crosstrek5.jpg" alt="Interior of Subaru Crosstrek" style="width:100%;">
-            </div>
-
-            <div class="col-md-5">
-                <div>
-                    <h2 class="imageTextHeader">Comfortable and Modern Interior</h2>
-                    <p class="imageTextBody">Inside the Crosstrek Sport, you’ll find a comfortable interior that combines modern style and durable high-tech materials – like its standard, adventure-ready StarTex® water-repellent upholstery with yellow contrast stitching and yellow accent trim.</p>
-                </div>
-            </div>
+          <div class="col-md-7 ">
+              <img src="./images/crosstrek2.jpg" alt="Subaru Crosstrek driving on road with kayaks on top of it " style="width:100%;">
+          </div>
+          <div class="col-md-5">
+              <div>
+                  <h2 class="imageTextHeader">Extra Power, Capability, and Fun</h2>
+                  <p class="imageTextBody">The 2024 Crosstrek features a newly available 2.5-liter direct-injection SUBARU BOXER engine that delivers more torque and increases output to 182 horsepower – extra power that makes all your trips more exciting and responsive.</p>
+              </div>
+          </div>
         </div>
 
-        <div class="row lastRow rowReverse">
-            <div class="col-md-7">
-                <img src="./images/crosstrek8.jpg" alt="Dashabord of Subaru Crosstrek with CarPlay®" style="width:100%;">
-            </div>
+        <div class="row">
+          <div class="col-md-7 order-md-2">
+              <img src="./images/crosstrek10.jpg" alt="Front grill of Subaru Crosstrek" style="width:100%;">
+          </div>
 
-            <div class="col-md-5">
-                <div>
-                    <h2 class="imageTextHeader">Safe, Convenient, and Entertaining</h2>
-                    <p class="imageTextBody">The 2024 Crosstrek features STARLINK Multimedia with standard Apple CarPlay® and Android Auto™ integration. Wireless pairing and hands-free smartphone operation allow for safe and easy connection to your favorite apps and content. Access news, navigation, music, podcasts, and more through available cloud-based STARLINK apps and SiriusXM®. An 8-inch touchscreen is available, as well as a built-in and voice-activated navigation system powered by TomTom®.</p>
-                </div>
-            </div>
+          <div class="col-md-5 order-md-1">
+              <div>
+                  <h2 class="imageTextHeader">Sporty Exterior Design</h2>
+                  <p class="imageTextBody">Crosstrek Sport features unique exterior design elements like its aggressively styled grille and wheel arch moldings, gunmetal finish exterior accents, and exclusive dark gray wheels.</p>
+              </div>
+          </div>
         </div>
 
-        <div class="row footer">
-                <div class="col-sm-12 col-md-4 col-xs-12">
-                    <span class="toBold">Sales:</span>
-                    <a href="tel:555-877-5434">555-877-5434</a>
-                </div>
-                <div class="col-sm-12 col-md-4 col-xs-12">
-                    <span class="toBold">Service:</span>
-                    <a href="tel:555-877-5434">555-877-5434</a>
-                </div>
-                <div class="col-sm-12 col-md-5 col-xs-12">
-                    <a href="./hours.html">1326 SE Enterprise, Charlotte, NC 28204</a>
-                </div>
+        <div class="row">
+          <div class="col-md-7">
+              <img src="./images/crosstrek5.jpg" alt="Interior of Subaru Crosstrek" style="width:100%;">
+          </div>
+
+          <div class="col-md-5">
+            <div>
+               <h2 class="imageTextHeader">Comfortable and Modern Interior</h2>
+                <p class="imageTextBody">Inside the Crosstrek Sport, you’ll find a comfortable interior that combines modern style and durable high-tech materials – like its standard, adventure-ready StarTex® water-repellent upholstery with yellow contrast stitching and yellow accent trim.</p>
+              </div>
+          </div>
         </div>
-    </div>
 
-<script src="./js/main.js"></script>
+        <div class="row lastRow">
+          <div class="col-md-7">
+              <img src="./images/crosstrek8.jpg" alt="Dashabord of Subaru Crosstrek with CarPlay®" style="width:100%;">
+          </div>
 
-</body>
+          <div class="col-md-5">
+              <div>
+                  <h2 class="imageTextHeader">Safe, Convenient, and Entertaining</h2>
+                  <p class="imageTextBody">The 2024 Crosstrek features STARLINK Multimedia with standard Apple CarPlay® and Android Auto™ integration. Wireless pairing and hands-free smartphone operation allow for safe and easy connection to your favorite apps and content. Access news, navigation, music, podcasts, and more through available cloud-based STARLINK apps and SiriusXM®. An 8-inch touchscreen is available, as well as a built-in and voice-activated navigation system powered by TomTom®.</p>
+              </div>
+          </div>
+        </div>
+
+
+        <footer class="row footer">      
+          <div class="col-sm-12 col-md-4 col-xs-12">
+            <span class="toBold">Sales:</span>
+            <a href="tel:555-877-5434">555-877-5434</a>
+          </div>
+          <div class="col-sm-12 col-md-4 col-xs-12">
+            <span class="toBold">Service:</span>
+            <a href="tel:555-877-5434">555-877-5434</a>
+          </div>
+          <div class="col-sm-12 col-md-4 col-xs-12">
+            <a href="./hours.html">1326 SE Enterprise, Charlotte, NC 28204</a>
+          </div>
+        </footer>
+
+      </div>
+
+      <script src="./js/main.js"></script>
+    </body>
+
 </html>
