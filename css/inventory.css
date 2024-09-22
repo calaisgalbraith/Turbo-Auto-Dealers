@@ -1,3 +1,7 @@
+.inventory.container-fluid {
+    margin-top: 96px;
+}
+
 /* Inventory Container */
 .inventoryContainer {
     text-align: center;
