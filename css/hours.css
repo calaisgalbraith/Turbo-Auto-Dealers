@@ -1,11 +1,16 @@
 .hours.container-fluid {
     margin-top: 96px;
+    overflow: scroll;
 }
-/* Hours */
+
+.hoursContainer > div {
+    margin: auto;
+  }
+
+/* Hours*/
 .hoursContainer {
     text-align: center;
     height: 80vh;
-    font-size: 25px;
 }
 
 .hoursContainer .col-md-12 {
@@ -18,5 +23,75 @@
 }
 
 .hoursContainer .card-header {
-    width: 100%;
+    margin-right: -11px;
+    margin-left: -11px;
+}
+
+.hoursContainer h3 {
+    font-size: 25px;
+}
+
+.hoursContainer .list-group  {
+    font-size: 20px;
+}
+
+.cardRow {
+    padding-top: 20px;
+}
+
+.dealerTitle {
+    font-size: 35px;
+}
+
+.dealerAddress {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 867px) {
+    .hoursContainer .list-group  {
+        font-size: 15px !important;
+    }
+}
+
+/* Map */
+@media screen and (min-width: 1304px) {
+    #map {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1060px) and (max-width: 1303px) {
+    #map {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width: 852px) and (max-width: 1059px) {
+    #map {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 867px) {
+    #map {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #map {
+        width: 500px;
+        height: 300px;
+        margin: auto
+    }
+    
+    .mapContainer {
+        padding-bottom: 90px;
+        padding-top: 15px;
+    }
 }
