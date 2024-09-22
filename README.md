@@ -15,6 +15,7 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 
 ## Core Features
 * Custom web styling & design using Bootstrap
+* Responsive styling
 * Image carousel of promotional images
 * Phone numbers are clickable telephone links
 * Back to top button
@@ -22,7 +23,6 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * Link to page for Inventory
 
 ## Future Enhancements 
-* Add responsive sizing up to 360px
 * Add demo data for Inventory
 * Add filtering options for Inventory
 * Have Inventory data come from API, rather than JSON
