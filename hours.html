@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/hours.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Subaru Dealer</a>
+        <a class="navbar-brand" href="./index.html">Subaru of America</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,23 +36,42 @@
       </div>
     </nav>
   </header>
-
   <div class="container-fluid hours">
         <div class="row hoursContainer">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header"><h3>Hours</h3></div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Monday: 9:00am-5:00pm</li>
-                        <li class="list-group-item">Tuesday: 9:00am-5:00pm</li>
-                        <li class="list-group-item">Wednesday: 9:00am-5:00pm</li>
-                        <li class="list-group-item">Thursday: 9:00am-5:00pm</li>
-                        <li class="list-group-item">Friday: 9:00am-5:00pm</li>
-                        <li class="list-group-item">Saturday: 10:00am-3:00pm</li>
-                        <li class="list-group-item">Sunday: CLOSED</li>
-                    </ul>
+          
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="container">
+              <div class="row dealerTitle">
+                <div class="col">
+                  Subaru of America
                 </div>
+              </div>
+              <div class="row dealerAddress">
+                <div class="col">
+                  One Subaru Dr, Camden, NJ 08103
+                </div>
+              </div>
+              <div class="row cardRow">
+                <div class="card">
+                  <div class="card-header"><h3>Hours</h3></div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Monday: 9:00am-5:00pm</li>
+                      <li class="list-group-item">Tuesday: 9:00am-5:00pm</li>
+                      <li class="list-group-item">Wednesday: 9:00am-5:00pm</li>
+                      <li class="list-group-item">Thursday: 9:00am-5:00pm</li>
+                      <li class="list-group-item">Friday: 9:00am-5:00pm</li>
+                      <li class="list-group-item">Saturday: 10:00am-3:00pm</li>
+                      <li class="list-group-item">Sunday: CLOSED</li>
+                    </ul>
+                  </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12 mapContainer">
+            <div id='map'></div>
+          </div>
+
         </div>
 
         <footer class="row footer fixed-bottom">      
@@ -66,9 +88,25 @@
             </div>
         </footer>
 
-    </div>
+  </div>
 
-    <script src="./js/main.js"></script>
+    <script type='text/javascript' src='./js/config.js'></script>
+    <script>
+
+      const apiKey = config.API_KEY;
+      mapboxgl.accessToken = apiKey;
+      const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-75.108002, 39.942619], // starting position [lng, lat]
+        zoom: 9, // starting zoom
+      });
+
+      const marker = new mapboxgl.Marker({ color: 'black' })
+        .setLngLat([-75.108002, 39.942619])
+        .addTo(map);
+    </script>
+    
 
 </body>
 </html>
