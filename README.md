@@ -12,6 +12,7 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * CSS
 * Bootstrap
 * Javascript
+* Mapbox API
 
 ## Core Features
 * Custom web styling & design using Bootstrap
@@ -19,8 +20,9 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * Image carousel of promotional images
 * Phone numbers are clickable telephone links
 * Back to top button
-* Link to page for Hours
 * Link to page for Inventory
+* Link to page for Hours
+  * Users can view the dealer location via Mapbox
 
 ## Future Enhancements 
 * Add demo data for Inventory
