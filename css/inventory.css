@@ -1,3 +1,7 @@
+.inventory.container-fluid {
+    margin-top: 96px;
+}
+
 /* Inventory Container */
 .inventoryContainer {
     text-align: center;
@@ -9,4 +13,11 @@
 
 .inventoryContainer div {
     margin: auto;
+}
+
+/* Responsive sizing */
+@media only screen and (min-width: 770px) and (max-width: 1000px){
+    .inventory .footer {
+        font-size: 15px;
+    }
 }

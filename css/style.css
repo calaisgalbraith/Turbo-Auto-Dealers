@@ -1,4 +1,8 @@
 /* Container / General */
+body {
+   background-color: #f7f8f9 !important;
+}
+
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
@@ -24,6 +28,46 @@
 #backToTopBtn:hover {
     opacity: 70%;
 }
+
+/* Responsive Sizing */
+@media screen and (min-width: 768px) and (max-width: 985px) {
+    .statsRow {
+        font-size: 25px !important;
+    }
+
+    .statsRow .smallerFont {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1075px) {
+    .imageTextBody {
+        font-size: 13px !important;
+    }
+    
+    .imageTextHeader {
+        font-size: 25px !important;
+        padding-bottom: 5px !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .col-lg-5 {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media screen and (min-width: 1075px) and (max-width: 1278px) {
+    .imageTextBody {
+        font-size: 15px !important;
+    }
+    
+    .imageTextHeader {
+        font-size: 30px !important;
+    }
+}
+
 
 /* NavBar */
 .navbar {
@@ -96,13 +140,13 @@
     padding-bottom: 25px;
 }
 
-.container-fluid .col-md-5 {
+.container-fluid .col-lg-5 {
     margin: auto;
     padding-left: 55px;
     padding-right: 55px;
 }
 
-.container-fluid .col-md-7 {
+.container-fluid .col-lg-7 {
     padding-right: 0px;
     padding-left: 0px;
 }
