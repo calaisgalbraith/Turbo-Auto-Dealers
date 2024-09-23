@@ -90,10 +90,10 @@
 
   </div>
 
-    <script type='text/javascript' src='./js/config.js'></script>
+    <script type="module" src='./js/config.js'></script>
     <script>
 
-      const apiKey = config.API_KEY;
+      const apiKey = 'pk.eyJ1IjoiY2FsYWlzZyIsImEiOiJja3I1MXM0a2czMTkxMnBvOG1mcGtnajIzIn0.MH-2HzssgCF0qNUZhFAmCQ';
       mapboxgl.accessToken = apiKey;
       const map = new mapboxgl.Map({
         container: 'map', // container ID
