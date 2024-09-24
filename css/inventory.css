@@ -2,6 +2,12 @@
     margin-top: 96px;
 }
 
+/* Back To Top Btn */
+#backToTopBtn {
+    bottom: 95px !important;
+}
+
+
 /* Filter */
 .form-select {
     color: black;
@@ -69,5 +75,21 @@ form .col-xs-12{
 @media only screen and (min-width: 770px) and (max-width: 1000px){
     .inventory .footer {
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #backToTopBtn {
+        bottom: 155px !important;
+    }
+
+    .inventoryContainer {
+        margin-bottom: 150px !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 692px){
+    .card {
+        font-size: 19px !important;
     }
 }
