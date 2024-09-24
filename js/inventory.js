@@ -17,9 +17,6 @@ async function renderCars (filterOptions = []) {
         const displayCar = cars[car]
         let mileage = ''
         let condition = ''
-        if (!displayCar.mileage) { // if used car (mileage !== 0)
-             mileage = `<li class="list-group-item">Mileage: $${displayCar.mileage}</li>`
-        }
         carHTML += `
             <div class="col">
                 <div class="card">
@@ -30,6 +27,7 @@ async function renderCars (filterOptions = []) {
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">MSRP: $${displayCar.price}</li> 
+                        <li class="list-group-item">Miles: $${displayCar.mileage}</li> 
                         <li class="list-group-item">Color: ${displayCar.color} <i class="bi bi-circle-fill" style="color: ${displayCar.color}"></i></li>
                         <li class="list-group-item">Fuel Type: ${displayCar.fuel} <i class="bi ${displayCar.fuelIcon}"></i></li>
                     </ul>
@@ -47,7 +45,7 @@ function filterCars (car, filterOptions) {
         if (filterOptions[key] === '') { // if no filter applied for field, continue
             continue
         }
-if (key === 'price') { // mileage & msrp filtering
+        if (key === 'price') { // mileage & msrp filtering
             if (Number(car[key].replace(',', '')) > Number(filterOptions[key])) { //  car price/mileage is > filtered price/mileage
                 returnCar = false
                 break
@@ -74,7 +72,7 @@ $('#filterInventoryBtn').click((e) => {
         "color": $('#colorSelect').val(),
         "year": $('#yearSelect').val(),
         "fuel": $('#fuelSelect').val(),
-"mileage": $('#mileageRange').val(),
+        "mileage": $('#mileageRange').val(),
         "price": $('#msrpRange').val(),
     }
     renderCars(filterOptions)
@@ -93,7 +91,7 @@ function clearFilters () {
     $('#colorSelect').prop('selectedIndex',0);
     $('#yearSelect').prop('selectedIndex',0);
     $('#fuelSelect').prop('selectedIndex',0);
-$('#mileageRange').val('57000')
+    $('#mileageRange').val('57000')
     $('#mileageMax').val('57000')
     $('#msrpRange').val('56000')
     $('#msrpMax').val('56000')

@@ -36,6 +36,7 @@ form .col-xs-12{
 
 .submitButtonCol {
     text-align: center;
+    padding-top: 25px;
 }
 
 .filterOptionsRow {
@@ -113,9 +114,9 @@ input[type="range"] {
 }
 
 /* Responsive sizing */
-@media only screen and (min-width: 770px) and (max-width: 1000px){
+@media only screen and (min-width: 770px) and (max-width: 1016px){
     .inventory .footer {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -132,5 +133,11 @@ input[type="range"] {
 @media only screen and (min-width: 576px) and (max-width: 692px){
     .card {
         font-size: 19px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1007px){
+    .card {
+        font-size: 16px !important;
     }
 }
