@@ -1,4 +1,4 @@
-# Subaru Crosstrek
+# Turbo Town Autos
 
 ## Description
 Welcome to Turbo Town Autos, your premier destination for the finest selection of Subaru vehicles! This custom-designed web application for this fictional car dealership features the all-new 2024 Subaru Crosstrek. Users can view dealership hours and location through Mapbox, and effortlessly browse and filter available inventory to find their perfect ride.
