@@ -68,6 +68,12 @@ body {
     }
 }
 
+@media screen and (max-width: 746px) {
+    .featureTitle {
+        font-size: 30px !important;
+    }
+}
+
 
 /* NavBar */
 .navbar {
@@ -98,6 +104,13 @@ body {
 
 .bi-car-front-fill {
     padding-right: 5px;
+}
+
+/* Feature Title */
+.featureTitle {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 /* Carousel */
