@@ -21,6 +21,7 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * Phone numbers are clickable telephone links
 * Back to top button
 * Link to page for Inventory
+  * Users can filter car inventory by Model, Mileage, Color, Year, Condition (New/Pre-Owned), MSRP, and Fuel Type.
 * Link to page for Hours
   * Users can view the dealer location via Mapbox
 
