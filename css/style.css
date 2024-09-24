@@ -92,6 +92,14 @@ body {
     background-color: white;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.bi-car-front-fill {
+    padding-right: 5px;
+}
+
 /* Carousel */
 .carousel-control-next, .carousel-control-prev {
     width: 7%;
