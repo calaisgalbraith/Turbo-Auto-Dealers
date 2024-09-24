@@ -1,6 +1,6 @@
 renderCars()
 async function renderCars (filterOptions = []) {
-    let cars
+    let cars = []
     await $.getJSON("./data/cars.json", function(json) {
         const filteredCars = json.filter((car) => filterCars(car, filterOptions))
         cars = filteredCars;
@@ -47,7 +47,17 @@ function filterCars (car, filterOptions) {
         if (filterOptions[key] === '') { // if no filter applied for field, continue
             continue
         }
-        if (filterOptions[key] !== car[key].toLowerCase()) { // check if car value matches filter value
+if (key === 'price') { // mileage & msrp filtering
+            if (Number(car[key].replace(',', '')) > Number(filterOptions[key])) { //  car price/mileage is > filtered price/mileage
+                returnCar = false
+                break
+            }
+        } else if (key === 'mileage') { // mileage & msrp filtering
+            if (Number(car[key].replace(',', '')) > Number(filterOptions[key])) { //  car price/mileage is > filtered price/mileage
+                returnCar = false
+                break
+            }
+        } else if (filterOptions[key] !== car[key].toLowerCase()) { // check if car value matches filter value
             returnCar = false
             break
         }
@@ -64,6 +74,8 @@ $('#filterInventoryBtn').click((e) => {
         "color": $('#colorSelect').val(),
         "year": $('#yearSelect').val(),
         "fuel": $('#fuelSelect').val(),
+"mileage": $('#mileageRange').val(),
+        "price": $('#msrpRange').val(),
     }
     renderCars(filterOptions)
 })
@@ -81,10 +93,23 @@ function clearFilters () {
     $('#colorSelect').prop('selectedIndex',0);
     $('#yearSelect').prop('selectedIndex',0);
     $('#fuelSelect').prop('selectedIndex',0);
+$('#mileageRange').val('57000')
+    $('#mileageMax').val('57000')
+    $('#msrpRange').val('56000')
+    $('#msrpMax').val('56000')
 }
 
 // Toggle filter panel
 $('.filterToggle button').click((e) => {
     e.preventDefault()
     $('#filterInventoryOptions').toggle()
+})
+
+// When slider is changed, update max value
+$('#mileageRange').on('input', (e) => {
+    $('#mileageMax').val(e.target.value)
+})
+
+$('#msrpRange').on('input', (e) => {
+    $('#msrpMax').val(e.target.value)
 })

@@ -43,6 +43,31 @@ form .col-xs-12{
     padding-right: 10px;
 }
 
+.minMaxContainer {
+    justify-content: space-around;
+    display: flex;
+}
+
+.minMaxContainer input {
+    width: 25%;
+}
+
+.sliderRow {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 1.5rem;
+    padding: 0;
+    accent-color: #1d252c;
+}
+
+.sliderRow *:disabled {
+    cursor: not-allowed;
+}
+
 #filterInventoryBtn {
     color: white;
     background-color: #1d252c;
