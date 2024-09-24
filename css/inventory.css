@@ -2,10 +2,46 @@
     margin-top: 96px;
 }
 
+/* Filter */
+.form-select {
+    color: black;
+    background-color: #b7bcc2;
+}
+
+form .col-xs-12{
+    padding: 15px;
+}
+
+.submitButtonCol {
+    text-align: center;
+}
+
+.filterOptionsRow {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#filterInventoryBtn {
+    color: white;
+    background-color: #1d252c;
+    border: none;
+}
+
+#clearFiltersBtn {
+    color: black;
+    background-color: #b7bcc2;
+    border: none;
+}
+
+#clearFiltersBtn:hover, #filterInventoryBtn:hover {
+    opacity: .85;
+}
+
 /* Inventory Container */
 .inventoryContainer {
     text-align: center;
-    height: 80vh;
+    overflow: scroll;
+    margin-bottom: 85px;
     font-size: 25px;
     margin-right: 15px;
     margin-left: 15px;
@@ -13,6 +49,20 @@
 
 .inventoryContainer div {
     margin: auto;
+}
+
+.defaultMessage {
+    width: 100%;
+}
+
+/* Car Card */
+.card-header {
+    margin: 0 !important;
+}
+
+.card {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
 }
 
 /* Responsive sizing */
