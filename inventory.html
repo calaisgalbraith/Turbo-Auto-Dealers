@@ -44,9 +44,14 @@
 
     <div class="container-fluid inventory">
 
+      <div class="row">
+        <div class="col filterToggle">
+            <button><i class="bi bi-filter"></i>Filter</button>
+        </div>
+      </div>
       <form id="filterInventoryOptions">
         <div class="row filterOptionsRow">
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Model" id="modelSelect">
                   <option value="" selected>Model</option>
                   <option value="ascent">Ascent</option>
@@ -59,7 +64,7 @@
                   <option value="wrx">WRX</option>
                 </select>
           </div>
-          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="col-md-3 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Condition" id="conditionSelect">
                   <option value="" selected>Condition</option>
                   <option value="new">New</option>
@@ -75,7 +80,7 @@
                   <option value="white">White</option>
                 </select>
           </div>
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Year" id="yearSelect">
                   <option value="" selected>Year</option>
                   <option value="2024">2024</option>
@@ -84,7 +89,7 @@
                   <option value="2019">2019</option>
                 </select>
           </div>
-          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="col-md-3 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Fuel Type" id="fuelSelect">
                   <option value="" selected>Fuel Type</option>
                   <option value="gas">Gas</option>
@@ -92,9 +97,29 @@
                 </select>
           </div>
         </div>
-        <!-- <div class="row">
-            Sliders
-        </div> -->
+
+        <div class="row sliderRow">
+          <div class="col">
+            <label for="customRange1" class="form-label">MSRP</label>
+            <input type="range" id="msrpRange" min="0" max="56000" value="56000">
+            <div class="minMaxContainer">
+              <input type="text" class="form-control" placeholder="Min" value="0" aria-label="Minimum MSRP" disabled>
+              <input type="text" class="form-control" placeholder="Max" value="56000"aria-label="Maximum MSRP" id="msrpMax">
+            </div>
+          </div>
+        </div>
+
+        <div class="row sliderRow">
+          <div class="col">
+            <label for="customRange1" class="form-label">Mileage</label>
+            <input type="range" id="mileageRange" min="0" max="57000" value="57000">
+            <div class="minMaxContainer">
+              <input type="text" class="form-control" placeholder="Min" value="0" aria-label="Minimum Mileage" disabled>
+              <input type="text" class="form-control" placeholder="Max" value="57000" aria-label="Maximum Mileage" id="mileageMax">
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col submitButtonCol">
             <button type="submit" class="btn btn-primary" id="filterInventoryBtn">Filter Cars</button>
