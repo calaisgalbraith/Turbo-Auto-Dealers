@@ -82,3 +82,9 @@ function clearFilters () {
     $('#yearSelect').prop('selectedIndex',0);
     $('#fuelSelect').prop('selectedIndex',0);
 }
+
+// Toggle filter panel
+$('.filterToggle button').click((e) => {
+    e.preventDefault()
+    $('#filterInventoryOptions').toggle()
+})

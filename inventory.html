@@ -44,9 +44,14 @@
 
     <div class="container-fluid inventory">
 
+      <div class="row">
+        <div class="col filterToggle">
+            <button><i class="bi bi-filter"></i>Filter</button>
+        </div>
+      </div>
       <form id="filterInventoryOptions">
         <div class="row filterOptionsRow">
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Model" id="modelSelect">
                   <option value="" selected>Model</option>
                   <option value="ascent">Ascent</option>
@@ -59,7 +64,7 @@
                   <option value="wrx">WRX</option>
                 </select>
           </div>
-          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="col-md-3 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Condition" id="conditionSelect">
                   <option value="" selected>Condition</option>
                   <option value="new">New</option>
@@ -75,7 +80,7 @@
                   <option value="white">White</option>
                 </select>
           </div>
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Year" id="yearSelect">
                   <option value="" selected>Year</option>
                   <option value="2024">2024</option>
@@ -84,7 +89,7 @@
                   <option value="2019">2019</option>
                 </select>
           </div>
-          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="col-md-3 col-sm-12 col-xs-12">
                 <select class="form-select" aria-label="Select Fuel Type" id="fuelSelect">
                   <option value="" selected>Fuel Type</option>
                   <option value="gas">Gas</option>

@@ -9,6 +9,22 @@
 
 
 /* Filter */
+.filterToggle {
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.filterToggle button{
+    border: none;
+    background-color: transparent;
+    font-weight: 550;
+}
+
+#filterInventoryOptions {
+    display: none
+}
 .form-select {
     color: black;
     background-color: #b7bcc2;
