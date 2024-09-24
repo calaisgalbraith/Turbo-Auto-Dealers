@@ -1,0 +1,134 @@
+[
+    {
+        "model": "Ascent",
+        "year": "2024",
+        "color": "Black",
+        "fuel": "gas",
+        "mileage": "",
+        "price": "50,040",
+        "condition": "New",
+        "imgSrc": "././images/ascentBlack.png",
+        "altTxt": "2024 Black Subaru Ascent"
+    },
+    {
+        "model": "Ascent",
+        "year": "2021",
+        "color": "White",
+        "fuel": "gas",
+        "mileage": "56,596",
+        "price": "28,995",
+        "condition": "Used",
+        "imgSrc": "././images/ascentWhite.png",
+        "altTxt": "2021 White Subaru Ascent"
+    },
+    {
+        "model": "Crosstrek",
+        "year": "2024",
+        "color": "Blue",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "31,985",
+        "condition": "New",
+        "imgSrc": "././images/crosstrekBlue.png",
+        "altTxt": "2024 Blue Subaru Crosstrek"
+    },
+    {
+        "model": "Crosstrek",
+        "year": "2024",
+        "color": "Black",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "34,597",
+        "condition": "New",
+        "imgSrc": "././images/crosstrekBlack.jpg",
+        "altTxt": "2024 Black Subaru Crosstrek"
+    },
+    {
+        "model": "Crosstrek",
+        "year": "2024",
+        "color": "White",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "34,597",
+        "condition": "New",
+        "imgSrc": "././images/crosstrekWhite.png",
+        "altTxt": "2024 White Subaru Crosstrek"
+    },
+    {
+        "model": "Crosstrek",
+        "year": "2024",
+        "color": "Green",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "34,972",
+        "condition": "New",
+        "imgSrc": "././images/crosstrekGreen.png",
+        "altTxt": "2024 Green Subaru Crosstrek"
+    },
+    {
+        "model": "Forester",
+        "year": "2024",
+        "color": "Green",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "37,633",
+        "condition": "New",
+        "imgSrc": "././images/foresterGreen.png",
+        "altTxt": "2024 Green Subaru Forester"
+    },
+    {
+        "model": "Impreza",
+        "year": "2019",
+        "color": "Black",
+        "fuel": "gas",
+        "mileage": "41,481",
+        "price": "18,595",
+        "condition": "Used",
+        "imgSrc": "././images/imprezaBlack.png",
+        "altTxt": "2019 Black Subaru Impreza"
+    },
+    {
+        "model": "Legacy",
+        "year": "2024",
+        "color": "Blue",
+        "fuel": "gas",
+        "mileage": 0,
+        "price": "37,023",
+        "condition": "New",
+        "imgSrc": "././images/legacyBlue.png",
+        "altTxt": "2024 Blue Subaru Legacy"
+    },
+    {
+        "model": "Outback",
+        "year": "2024",
+        "color": "White",
+        "fuel": "gas",
+        "mileage": "7969",
+        "price": "36,991",
+        "condition": "Used",
+        "imgSrc": "././images/outbackWhite.png",
+        "altTxt": "2024 White Subaru Outback"
+    },
+    {
+        "model": "Solterra",
+        "year": "2024",
+        "color": "Red",
+        "fuel": "electric",
+        "mileage": 0,
+        "price": "55,209",
+        "condition": "New",
+        "imgSrc": "././images/solterraRed.png",
+        "altTxt": "2024 Red Subaru Solterra"
+    },
+    {
+        "model": "WRX",
+        "year": "2020",
+        "color": "White",
+        "fuel": "gas",
+        "mileage": "37,058",
+        "price": "26,995",
+        "condition": "Used",
+        "imgSrc": "././images/wrxWhite.jpg",
+        "altTxt": "2020 White Subaru WRX"
+    }        
+]
