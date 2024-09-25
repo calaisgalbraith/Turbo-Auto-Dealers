@@ -76,12 +76,14 @@ $('#filterInventoryBtn').click((e) => {
         "price": $('#msrpRange').val(),
     }
     renderCars(filterOptions)
+    $('#filterInventoryOptions').toggle()
 })
 
 $('#clearFiltersBtn').click((e) => { // on click, clear filters & update displayed cars
     e.preventDefault()
     clearFilters()
     renderCars()
+    $('#filterInventoryOptions').toggle()
 })
 
 // Clear form filters, reset selects
