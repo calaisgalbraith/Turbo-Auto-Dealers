@@ -17,6 +17,12 @@ async function renderCars (filterOptions = []) {
         const displayCar = cars[car]
         let mileage = ''
         let condition = ''
+        let colorStyle = displayCar.color // color for boostrap circle icon
+        if (displayCar.ignoreStyle) { // if ignore style (car color is white)
+            console.log('ignore style')
+            colorStyle = ''
+            console.log(colorStyle)
+        }
         carHTML += `
             <div class="col">
                 <div class="card">
@@ -28,7 +34,7 @@ async function renderCars (filterOptions = []) {
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">MSRP: $${displayCar.price}</li> 
                         <li class="list-group-item">Miles: $${displayCar.mileage}</li> 
-                        <li class="list-group-item">Color: ${displayCar.color} <i class="bi bi-circle-fill" style="color: ${displayCar.color}"></i></li>
+                        <li class="list-group-item">Color: ${displayCar.color} <i class="${displayCar.colorIcon}" style="color: ${colorStyle}"></i></li>
                         <li class="list-group-item">Fuel Type: ${displayCar.fuel} <i class="bi ${displayCar.fuelIcon}"></i></li>
                     </ul>
                 </div>
@@ -76,12 +82,14 @@ $('#filterInventoryBtn').click((e) => {
         "price": $('#msrpRange').val(),
     }
     renderCars(filterOptions)
+    $('#filterInventoryOptions').toggle()
 })
 
 $('#clearFiltersBtn').click((e) => { // on click, clear filters & update displayed cars
     e.preventDefault()
     clearFilters()
     renderCars()
+    $('#filterInventoryOptions').toggle()
 })
 
 // Clear form filters, reset selects

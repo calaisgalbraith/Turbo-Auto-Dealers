@@ -113,6 +113,11 @@ input[type="range"] {
     margin-top: 15px !important;
 }
 
+/* Default message */ 
+.row:has(.defaultMessage) {
+    height: calc(100vh - 250px);
+}
+
 /* Responsive sizing */
 @media only screen and (min-width: 770px) and (max-width: 1016px){
     .inventory .footer {
@@ -128,6 +133,11 @@ input[type="range"] {
     .inventoryContainer {
         margin-bottom: 150px !important;
     }
+
+    .row:has(.defaultMessage) {
+        height: calc(100vh - 300px) !important;
+    }
+    
 }
 
 @media only screen and (min-width: 576px) and (max-width: 692px){
