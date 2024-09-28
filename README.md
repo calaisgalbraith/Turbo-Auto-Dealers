@@ -26,6 +26,8 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
   * Users can view the dealer location via Mapbox
 
 ## Future Enhancements 
+* Continue to improve styling & UX
+* Add visual indicators for active filter fields
 * Have Inventory data & keys come from API, rather than JSON
 * ~~Add demo data for Inventory~~
 * ~~Add filtering options for Inventory~~
