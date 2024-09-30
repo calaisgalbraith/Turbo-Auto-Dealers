@@ -77,8 +77,8 @@ body {
 
 /* NavBar */
 .navbar {
-    background-color: #1d252c !important;
-    min-height: 80px !important;
+    background-color: #333333 !important;
+    height: 80px !important;
 }
 
 .navbar .container-fluid {
@@ -86,7 +86,7 @@ body {
 }
 
 .navbar-brand, .nav-link {
-    color: white !important;
+    color: #a9a9a9 !important;
 }
 
 .navbar-collapse {
@@ -95,7 +95,7 @@ body {
 }
 
 .navbar-toggler {
-    background-color: white;
+    background-color: #a9a9a9;
 }
 
 .nav-link:hover {
@@ -108,9 +108,12 @@ body {
 
 /* Feature Title */
 .featureTitle {
+    background-color: #333333;
     text-align: center;
     font-size: 45px;
     font-weight: bold;
+    color: #fdfdfd;
+    padding-top: 15px;
 }
 
 /* Carousel */
@@ -118,13 +121,31 @@ body {
     width: 7%;
 }
 
+/* Row */
+.row {
+    margin-right: 0px;
+}
+
 /* Stats Row */
 .statsRow {
-    color: white;
-    background-color: #1d252c;
+    color: #fdfdfd;
+    background-color: #333333;
     font-size: 35px;
     text-align: center;
     padding: 35px;
+}
+
+.inventoryBtnRow {
+    padding-top: 0px !important;
+}
+
+.carousel-item {
+    max-height: 75vh;
+}
+
+.carousel-item img {
+    background-size: cover;
+    background-position: center;
 }
 
 .toBold {
@@ -174,8 +195,8 @@ body {
 
 /* Footer */
 .footer {
-    color: #b7bcc2;
-    background-color: #1d252c;
+    color: #a9a9a9;
+    background-color: #333333;
     text-align: center;
     font-size: 20px;
     padding: 25px;
@@ -187,11 +208,11 @@ body {
 }
 
 .footer a {
-    color: #b7bcc2;
+    color: #a9a9a9;
 }
 
 .footer a:hover {
-    color: #b7bcc2 !important;
+    color: #a9a9a9 !important;
 }
 
 
