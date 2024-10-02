@@ -151,3 +151,12 @@ input[type="range"] {
         font-size: 16px !important;
     }
 }
+
+/* Slim Select */
+.ss-content .ss-list .ss-option:hover, .ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected, .ss-main .ss-values .ss-value{
+    background-color: #333333 !important;
+}
+
+.ss-main .ss-values .ss-value .ss-value-text {
+    font-size: 15px !important;
+}
