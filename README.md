@@ -13,6 +13,7 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * Bootstrap
 * Javascript
 * Mapbox API
+* [Slim Select](https://slimselectjs.com/)
 
 ## Core Features
 * Custom web styling & design using Bootstrap
@@ -22,6 +23,7 @@ View site [here](https://cg-subaru-crosstrek.netlify.app/)
 * Back to top button
 * Link to page for Inventory
   * Users can filter car inventory by Model, Mileage, Color, Year, Condition (New/Pre-Owned), MSRP, and Fuel Type.
+  * Users can filter by multiple values (i.e Model: Crosstrek & WRX, Color: Green & Black...)
 * Link to page for Hours
   * Users can view the dealer location via Mapbox
 
