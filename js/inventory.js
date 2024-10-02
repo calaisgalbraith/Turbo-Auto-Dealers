@@ -15,9 +15,6 @@ async function renderCars (filterOptions = []) {
     // if cars exist, display them
     for (const car in cars) {
         const displayCar = cars[car]
-        let mileage = ''
-        let condition = ''
-        let colorStyle = displayCar.color // color for boostrap circle icon
         carHTML += `
             <div class="col">
                 <div class="card">
