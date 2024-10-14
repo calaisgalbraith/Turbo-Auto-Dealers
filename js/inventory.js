@@ -25,7 +25,7 @@ async function renderCars (filterOptions = []) {
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">MSRP: $${displayCar.price}</li> 
-                        <li class="list-group-item">Miles: $${displayCar.mileage}</li> 
+                        <li class="list-group-item">Miles: ${displayCar.mileage}</li> 
                         <li class="list-group-item">Color: ${displayCar.color} <i class="${displayCar.colorIcon}" style="color: ${displayCar.colorCode}"></i></li>
                         <li class="list-group-item">Fuel Type: ${displayCar.fuel} <i class="bi ${displayCar.fuelIcon}"></i></li>
                     </ul>
